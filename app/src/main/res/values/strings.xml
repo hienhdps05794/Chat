@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AppChatGr2</string>
+
+
+    <string name="btn_accept">Accept</string>
+    <string name="btn_deny">Deny</string>
+    <string name="btn_add">Add</string>
+
+
+</resources>

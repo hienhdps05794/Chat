@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_user_recent_fragment"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:elevation="2dp"
+        android:src="@drawable/avatar_demo"
+        app:civ_border_color="#b73b3258"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:fontFamily="@font/advent_pro_thin"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:id="@+id/tv_name_recent_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_user_recent_fragment"
+        android:text="Milan Joe" />
+
+    <TextView
+        android:fontFamily="@font/convergence"
+        android:id="@+id/tv_last_mess_recent_fragment"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name_recent_fragment"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_user_recent_fragment"
+        android:maxLength="40"
+        android:textSize="12dp"
+        android:maxLines="1"
+        android:textColor="#d0d0d0"
+        android:text="Hello World!" />
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.LoggedInActivity">
+
+    <LinearLayout
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="#fff"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:id="@+id/section_recent_loggedin_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_recent_loggedin_activity"
+                android:layout_width="@dimen/dim_icon_tablayout"
+                android:layout_height="@dimen/dim_icon_tablayout"
+                android:src="@drawable/recent_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/section_findfriend_loggedin_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_findfriend_loggedin_activity"
+                android:layout_width="@dimen/dim_icon_tablayout"
+                android:layout_height="@dimen/dim_icon_tablayout"
+                android:src="@drawable/find_friend_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/section_contact_loggedin_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:defaultFocusHighlightEnabled="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_contact_loggedin_activity"
+                android:layout_width="@dimen/dim_icon_tablayout"
+                android:layout_height="@dimen/dim_icon_tablayout"
+                android:src="@drawable/contact_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/section_profile_loggedin_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_profile_loggedin_activity"
+                android:layout_width="@dimen/dim_icon_tablayout"
+                android:layout_height="@dimen/dim_icon_tablayout"
+                android:src="@drawable/profile_normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_loggedin_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

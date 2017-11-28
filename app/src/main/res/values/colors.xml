@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#f4645c</color>-->
+    <!--<color name="colorPrimaryDark">#f3574e</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    <color name="colorPrimary">#945fca</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#945fca</color>
+
+
+
+    <color name="colorClickItemTopBar">#f0f1f2</color>
+
+
+    <color name="colorBtnAccept">#945fca</color>
+    <color name="colorBtnDeny">#ffffff</color>
+    <color name="colorBtnDenyBorder">#ffffff</color>
+    <color name="colorTvAccept">#ffffff</color>
+    <color name="colorTvDeny">#ffffff</color>
+
+    <color name="colorDone">#3ea763</color>
+    <color name="colorCancel">#c8d63737</color>
+
+</resources>

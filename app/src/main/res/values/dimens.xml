@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="top_bar_height">48dp</dimen>
+
+
+    <dimen name="tv_search_radius">20dp</dimen>
+
+
+    <dimen name="avatar_width_height">60dp</dimen>
+    <dimen name="item_listview_height">76dp</dimen>
+    <dimen name="avatar_margin_left">10dp</dimen>
+    <dimen name="tv_username_margin_left">10dp</dimen>
+
+
+
+    <dimen name="btn_accept_radius">3dp</dimen>
+    <dimen name="width_iv_user_fragment_profile">90dp</dimen>
+    <dimen name="height_iv_user_fragment_profile">90dp</dimen>
+    <dimen name="margin_top_iv_user_fragment_profile">18dp</dimen>
+    <dimen name="dim_icon_tablayout">25dp</dimen>
+</resources>

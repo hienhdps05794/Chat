@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawble_bg_profile_fragment"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:background="@drawable/bg_login_activity"
+        android:elevation="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!--<ImageView-->
+
+        <!--android:id="@+id/iv_user_fragment_profile"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="175dp"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@drawable/avatar_demo" />-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_user_fragment_profile"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/avatar_demo"
+            app:civ_border_color="#fff"
+
+            app:civ_border_width="1dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout">
+
+        <RelativeLayout
+            android:id="@+id/relaout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-8dp"
+                android:fontFamily="@font/bungee_hairline"
+                android:text="Name"
+                android:textColor="#ffffff" />
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="9dp"
+                android:layout_toLeftOf="@id/name"
+                android:background="#17ffffff" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@id/name"
+                android:background="#17ffffff" />
+
+
+            <TextView
+                android:id="@+id/tv_name_user_profile_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dp"
+                android:fontFamily="@font/convergence"
+                android:text="Sara Doe"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_edit_name_profile_fragment"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@id/tv_name_user_profile_fragment"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/name"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_edit_profile_fragment" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relaout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relaout1"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-8dp"
+                android:fontFamily="@font/bungee_hairline"
+                android:text="Birthday"
+                android:textColor="#ffffff" />
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="9dp"
+                android:layout_toLeftOf="@id/birth"
+                android:background="#17ffffff" />
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@id/birth"
+                android:background="#17ffffff" />
+
+
+            <TextView
+                android:id="@+id/tv_birth_user_profile_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dp"
+                android:fontFamily="@font/convergence"
+                android:text="01 - 12 - 1998"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/iv_edit_birth_profile_fragment"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@id/tv_birth_user_profile_fragment"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/birth"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_edit_profile_fragment" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relaout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relaout4"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/provine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-8dp"
+                android:fontFamily="@font/bungee_hairline"
+                android:text="Province"
+                android:textColor="#ffffff" />
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="9dp"
+                android:layout_toLeftOf="@id/provine"
+                android:background="#17ffffff" />
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@id/provine"
+                android:background="#17ffffff" />
+
+
+            <TextView
+                android:id="@+id/tv_provine_user_profile_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dp"
+                android:fontFamily="@font/convergence"
+                android:text="Ho Chi Minh City"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/iv_edit_province_profile_fragment"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@id/tv_provine_user_profile_fragment"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/provine"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_edit_profile_fragment" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relaout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relaout2"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/working"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-8dp"
+                android:fontFamily="@font/bungee_hairline"
+                android:text="Occupacity"
+                android:textColor="#ffffff" />
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="9dp"
+                android:layout_toLeftOf="@id/working"
+                android:background="#17ffffff" />
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@id/working"
+                android:background="#17ffffff" />
+
+
+            <TextView
+                android:id="@+id/tv_working_user_profile_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dp"
+                android:fontFamily="@font/convergence"
+                android:text="Developer"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/iv_edit_working_profile_fragment"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@id/tv_working_user_profile_fragment"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/working"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_edit_profile_fragment" />
+        </RelativeLayout>
+
+
+        <TextView
+
+            android:id="@+id/tv_aboutus_fragment_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/bubbler_one"
+            android:text="About us"
+            android:textColor="#b8ffffff" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="7dp"
+            android:layout_toRightOf="@id/tv_aboutus_fragment_profile"
+            android:src="@drawable/ic_aboutus" />
+
+
+        <Button
+            android:id="@+id/btn_logout_profile_fragment"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_above="@id/tv_aboutus_fragment_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/drawble_btn_logout"
+            android:fontFamily="@font/andada"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textColor="#f2f2f2" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

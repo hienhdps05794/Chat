@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollFragmentFindFriends"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edt_search_fragment_find_friend"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="5dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/background_search"
+            android:drawableLeft="@drawable/search"
+            android:focusable="false"
+            android:hint="Search..."
+            android:theme="@style/mySearchInput" />
+
+        <TextView
+            android:id="@+id/tv_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_search_fragment_find_friend"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Friend Request" />
+
+        <ListView
+            android:id="@+id/lv_friend_request"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/tv_request"></ListView>
+
+
+        <TextView
+            android:id="@+id/tv_peoplemayknow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lv_friend_request"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="People you may know" />
+
+        <ListView
+            android:id="@+id/lv_mayknow"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/tv_peoplemayknow"></ListView>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

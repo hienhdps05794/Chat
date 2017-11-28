@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/themeLoginRegisterActivity"
+    android:background="@drawable/bg_login_activity"
+    android:gravity="center_horizontal"
+    android:fitsSystemWindows="true"
+    tools:context=".Activities.LoginActivity">
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logov3"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/acme"
+            android:text="Log In"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:textColorHint="#fff"
+        android:id="@+id/tip_email_user_login_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:textColor="#b6ffffff"
+            android:textColorHint="#b6ffffff"
+            android:backgroundTint="#fff"
+            android:ems="13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:textColorHint="#fff"
+        android:id="@+id/tip_password_user_login_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:textColor="#b6ffffff"
+            android:textColorHint="#b6ffffff"
+            android:backgroundTint="#fff"
+            android:ems="13"
+            android:id="@+id/edt_password_user_register_activity"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:hint="Password" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login_activity"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/drawble_btn_logout"
+        style="?android:attr/borderlessButtonStyle"
+        android:ems="11"
+        android:textSize="18sp"
+        android:fontFamily="@font/acme"
+        android:text="Log In"
+        android:textAllCaps="false"
+        android:textColor="#49beff" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/arimo"
+        android:text="Not a member yet?"
+        android:textColor="#fff" />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:ems="11"
+        android:background="@drawable/btn_border_white"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_signup_login_activity"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:fontFamily="@font/acme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+</LinearLayout>

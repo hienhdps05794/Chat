@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_listview_height"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_avatar_request"
+            android:src="@drawable/anonymous"
+            android:layout_marginLeft="@dimen/avatar_margin_left"
+            android:layout_width="@dimen/avatar_width_height"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/avatar_width_height" />
+        <TextView
+            android:id="@+id/tv_username_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hải Nam"
+            android:textColor="#1d2129"
+            android:layout_marginTop="6dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="@dimen/tv_username_margin_left"
+            android:layout_toRightOf="@id/iv_avatar_request"/>
+        <Button
+            android:id="@+id/btn_accept_request"
+            android:text="@string/btn_accept"
+            android:textColor="@color/colorTvAccept"
+            android:layout_below="@+id/tv_username_request"
+            android:layout_toLeftOf="@+id/btn_deny_request"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/button_accept"
+            android:layout_height="wrap_content" />
+        <Button
+            android:textColor="#dcdee3"
+            android:id="@+id/btn_deny_request"
+            android:text="@string/btn_deny"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_username_request"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/button_deny"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>
